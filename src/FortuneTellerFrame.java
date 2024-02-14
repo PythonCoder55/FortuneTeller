@@ -28,10 +28,8 @@ public class FortuneTellerFrame extends JFrame {
         // center frame in screen
         setSize((screenWidth / 4) * 3, (screenHeight / 4) * 3);
         setLocation(screenWidth / 4, screenHeight / 4);
-
-        //setSize(800, 600);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        setLocationRelativeTo(null); // Center the frame on screen
+        setLocationRelativeTo(null);
         setVisible(true);
     }
 
@@ -53,7 +51,7 @@ public class FortuneTellerFrame extends JFrame {
     }
 
     private void createComponents() {
-        fortuneTellerImage = new ImageIcon("src/fortuneTeller.png"); // Replace "fortuneteller.jpg" with your image file
+        fortuneTellerImage = new ImageIcon("src/fortuneTeller.png");
         titleLabel = new JLabel("Fortune Teller", fortuneTellerImage, SwingConstants.CENTER);
         titleLabel.setVerticalTextPosition(JLabel.TOP);
         titleLabel.setHorizontalTextPosition(JLabel.CENTER);
